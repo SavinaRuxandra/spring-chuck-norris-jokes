@@ -1,18 +1,6 @@
 package guru.springframework.chucknorrisjokesapp.service;
 
-import guru.springframework.norris.chuck.ChuckNorrisQuotes;
-import org.springframework.stereotype.Service;
+public interface JokeService {
 
-@Service
-public class JokeService {
-
-    private ChuckNorrisQuotes chuckNorrisQuotes;
-
-    public JokeService() {
-        ChuckNorrisQuotes chuckNorrisQuotes = new ChuckNorrisQuotes();
-    }
-
-    public String generateJoke(){
-        return chuckNorrisQuotes.getRandomQuote();
-    }
+    String generateJoke();
 }
